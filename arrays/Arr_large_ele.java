@@ -17,5 +17,6 @@ public class Arr_large_ele {
             }
         }
         System.out.println(max);
+        s.close();
     }
 }
