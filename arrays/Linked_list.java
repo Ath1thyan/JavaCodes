@@ -9,10 +9,13 @@ public class Linked_list {
         LinkedList<String> car = new LinkedList<String>();
         ArrayList<String> bike = new ArrayList<String>();
         List<Integer> num=new ArrayList<Integer>();
-        bike.add("duke");
+        bike.add("Duke");
         car.add("bently");
         System.out.println(car);
         System.out.println(bike);
-
+        String a = bike.toString();
+        String b = a.toLowerCase();
+        System.out.println(b);
+        
     }
 }

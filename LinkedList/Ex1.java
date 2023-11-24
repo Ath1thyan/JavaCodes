@@ -1,4 +1,4 @@
-package Java.LinkedList;
+package LinkedList;
 
 public class Ex1 {
     public static void main(String[] args) {

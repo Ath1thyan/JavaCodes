@@ -1,4 +1,4 @@
-package Test_Program;
+package String;
 
 public class Replace {
     public static void main(String[] args) {
