@@ -10,9 +10,19 @@ class TreeNode {
         this.left = null;
         this.right = null;
     }
+
+    public int maxDepth(TreeNode node) {
+        if (node == null) {
+            return 0;
+        } else {
+            int depthLeft = maxDepth(node.left);
+            int depthRight = maxDepth(node.right);
+            return Math.max(depthLeft, depthRight) + 1;
+        }
+    }
 }
 
-public class InOrderTree {
+public class TreeDepth {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(19);
         root.left = new TreeNode(17);
@@ -35,20 +45,10 @@ public class InOrderTree {
         root.right.right.left.right.right = new TreeNode(1);
         root.right.right.left.right.right.right = new TreeNode(3);
 
-
-        System.out.println("In-order traversal:");
-        inOrderTraversal(root);
-        System.out.println();
+        
+        int treeDepth = root.maxDepth(root); // Call maxDepth method from an instance
+        System.out.println("Height of tree is " + treeDepth);
     }
 
-
-    public static void inOrderTraversal(TreeNode node) {
-        if (node == null) {
-            return;
-        }
-        inOrderTraversal(node.left);
-        System.out.print(node.data + " ");
-        inOrderTraversal(node.right);
-    }
     
 }
