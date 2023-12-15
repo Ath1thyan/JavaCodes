@@ -14,6 +14,9 @@ public class GraphLogic {
             edge[i] = new Edges(0, 0);
         }
     }
+    // void fun(int ...o){
+
+    // }
 }
 
 // public class GraphLogic {
